@@ -235,20 +235,44 @@
   lambda表达式
   
 * 什么是动态方法调度(Dynamic Method Dispatch)？
+
+  多态
+  
 * 名字空间(Namespace)有什么用？有什么可以替代它的吗？
+
+  package/import 避免命名冲突 
+  
 * 谈谈Java和C#之间的互操作性(Interoperability) (任选其他两门语言都行)
+
+  通过工具打包让对面可识别并调用
+  
 * 为什么很多软件工程师不喜欢Java？
 * 你认为好的语言好在哪里？差的语言差在哪里？
 * 写两个函数，一个是"引用透明的(Referentially Transparent)"，另一个是"引用不透明的(Referentially Opaque)"。讨论之。
+
+  表达式和值的互换在任何情况下都不会导致不同结果就是透明
+  
 * 什么是栈？什么是堆？
 * 为什么一个语言中，"函数是第一公民"是很重要的？
 * 模式匹配(Pattern Matching)和Switch语句(Switch clauses)的区别在哪儿？
+
+  instanceof
+
 * 为什么有些语言设计上没有异常机制？这有什么优缺点？
+
+  代码简洁 debug时不容易直观看到问题原因
+
 * 如果`Cat`是一个`Animal`, 那么`TaskCare<Cat>`是一个`TakeCare<Animal>`吗？
+
+  泛型 是
+  
 
 #### <a name='web'>web相关问题:</a> [[↑]](#toc)
 
 * 为什么"第一方cookie(first-party cookie)"和"第三方cookie(third-party cookie)"被如此不同的对待？
+
+  第三方是跨网站保存用户的数据，可能涉及用户浏览习惯的隐私
+  
 
 #### <a name='databases'>数据库相关问题:</a> [[↑]](#toc)
 

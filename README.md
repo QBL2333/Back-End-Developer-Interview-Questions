@@ -277,16 +277,34 @@
 #### <a name='databases'>数据库相关问题:</a> [[↑]](#toc)
 
 * 如果要你将一个项目从MySQL迁移至PostgreSQL中，你会如何迁移？
+
+  迁移数据和表，更改DAO语法，更新索引和约束
+  
 * 为什么```SELECT * FROM table WHERE field = null```不能匹配空的字段？
+
+  =是equals，表示存储了值null而不是值为空
+
 * 什么是ACID(原子性，一致性，隔离性，持久性)原则？
 * 你是如何进行数据库模式(Database schema)迁移的？
+
+  flyway or backfill？
+
 * 延迟加载(lazy loading)是如何实现的？什么场景下有用？他有什么缺陷？
+
+  占位 数据多数据库负载大 线程不安全/内存泄漏
+
 * 什么是N+1问题？
+
+  一个查询执行了N+1次，1次主表N次副表
+
 * 如何找出应用中开销最大的查询？
 
 #### <a name='nosql'>非关系型数据库相关问题:</a> [[↑]](#toc)
 
 * 什么是最终一致性(Eventual Consistency)？
+
+  在不进行后续操作的情况下保证数据一致
+
 * 关于CAP理论，举一些CP、AP、CA系统的例子。
 * NoSQL是如何解决可伸缩性的挑战的？
 * 什么情况下你会使用类似于MongoDB的文档数据库而不是关系型数据库（如Mysql或者PostgreSQL）？

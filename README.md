@@ -321,22 +321,50 @@
 #### <a name='codeversioning'>代码版本管理相关问题:</a> [[↑]](#toc)
 
 * 为什么在Mercurial或者git中(管理)分支比SVN容易？
+
+  git只需要复制仓库ID，svn需要实际去复制一次分支版本文件
+
 * 分散式版本控制系统（比如git），相比集中式版本控制系统（如svn）有哪些优势和劣势？
 
 (注:集中式版本控制系统: Centralized Version Control Systems；分散式版本控制系统: Distributed Version Control Systems)
 
+  优点 分布式不依赖于服务器 无需时刻联网 提交修改时不一定需要基于最新版 提交不会被打断
+   
+  缺点 不容易知道其他人的修改 无法实施目录级的权限控制
+
 * 能描述一下什么是GitHubFlow和GitFlow工作流吗？
+
+  gitflow develop+master两个分支，定期把dev合并进master githubflow 只有一个master，发布时通过request
+
 * 什么是rebase？
+
+  将本地commit移到master上最后，保证线性提交
+
 * 为什么合并操作(merge)在Mercurial和git中比在SVN和CVS中容易？
+
+  git只要没有冲突就可以直接merge，svn如果有其他人修改过同一个文件就不能直接merge必须手动修改
+  
 
 #### <a name='concurrency'>并发问题:</a> [[↑]](#toc)
 
 * 为什么我们需要并发呢？解释一下。
 * 为什么测试多线程/并发代码这么困难？
 * 什么是竞争条件（Race Condition）？用任何一个语言写一个例子。
+
+  两个线程修改同一个变量，最终的值依据较慢的线程
+
 * 什么是死锁？用代码解释一下。
+
+  两个线程互相等待对方释放锁
+
 * 什么是饿死？
+
+  低优先级的线程一直得不到执行
+
 * 什么是Wait-Free算法？
+
+  lock-free 不使用锁 wait-free 所有线程都能有限步骤执行完且不依赖其他线程的结果
+  
 
 #### <a name='distributed'>分布式系统相关问题:</a> [[↑]](#toc)
 

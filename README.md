@@ -363,7 +363,7 @@
 
 * 什么是Wait-Free算法？
 
-  lock-free 不使用锁 wait-free 所有线程都能有限步骤执行完且不依赖其他线程的结果
+  lock-free 不使用锁 wait-free 所有线程都能有限步骤执行完且不依赖其他线程的进展
   
 
 #### <a name='distributed'>分布式系统相关问题:</a> [[↑]](#toc)
